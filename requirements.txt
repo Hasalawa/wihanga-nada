@@ -1,0 +1,14 @@
+flask>=3.0
+birdnetlib==0.18.1
+librosa>=0.10
+resampy>=0.4
+numpy
+audioread
+audioop-lts; python_version >= "3.13"   # birdnetlib's pydub needs the audioop module removed in 3.13
+
+# BirdNET needs a TFLite runtime. Install ONE of:
+#   pip install tensorflow        (big, but works on Python 3.13; this is what we tested with)
+#   pip install tflite-runtime    (small, but has no wheels for Python 3.13 yet)
+#
+# Optional: the --https flag (needed for the mic on a phone over Wi-Fi) also needs:
+#   pip install cryptography

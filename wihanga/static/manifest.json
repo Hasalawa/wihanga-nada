@@ -1,0 +1,9 @@
+{
+  "name": "Wihanga Nada",
+  "short_name": "Wihanga Nada",
+  "description": "Offline bird-call identifier for Sri Lanka",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1912",
+  "theme_color": "#0d1912"
+}

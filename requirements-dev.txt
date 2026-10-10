@@ -1,0 +1,3 @@
+# Enough to run the test-suite and the --demo mode (no TensorFlow / BirdNET needed).
+flask>=3.0
+pytest>=8
