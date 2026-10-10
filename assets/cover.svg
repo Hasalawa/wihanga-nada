@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1f15"/>
+      <stop offset="0.6" stop-color="#16402a"/>
+      <stop offset="1" stop-color="#2c6a3f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f6d57a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f6d57a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="420" fill="url(#sky)"/>
+  <circle cx="760" cy="150" r="190" fill="url(#glow)"/>
+
+  <!-- hills -->
+  <path d="M0 300 C120 250 220 290 340 262 C470 232 560 292 690 268 C810 246 910 280 1000 258 L1000 420 L0 420 Z" fill="#1c5232" opacity="0.85"/>
+  <path d="M0 340 C140 300 260 342 400 318 C540 294 650 346 790 322 C890 306 950 322 1000 314 L1000 420 L0 420 Z" fill="#12381f"/>
+  <path d="M0 384 C160 360 300 392 460 374 C620 356 760 394 1000 370 L1000 420 L0 420 Z" fill="#0a2415"/>
+
+  <!-- branch -->
+  <path d="M560 262 C640 252 760 262 900 240" fill="none" stroke="#0a1a10" stroke-width="9" stroke-linecap="round"/>
+  <path d="M700 258 C712 238 728 230 744 228" fill="none" stroke="#0a1a10" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#3f9a5a">
+    <ellipse cx="610" cy="244" rx="20" ry="8" transform="rotate(-25 610 244)"/>
+    <ellipse cx="925" cy="232" rx="22" ry="8" transform="rotate(-20 925 232)"/>
+  </g>
+
+  <!-- sound arcs coming from the beak -->
+  <g fill="none" stroke="#f6d57a" stroke-linecap="round">
+    <path d="M668 184 A34 34 0 0 0 668 142" stroke-width="5" opacity="0.95"/>
+    <path d="M650 198 A60 60 0 0 0 650 128" stroke-width="5" opacity="0.7"/>
+    <path d="M632 212 A88 88 0 0 0 632 114" stroke-width="5" opacity="0.45"/>
+    <path d="M614 226 A116 116 0 0 0 614 100" stroke-width="5" opacity="0.25"/>
+  </g>
+
+  <!-- bird (original, generic songbird silhouette) -->
+  <g fill="#f4efe0">
+    <path d="M690 160 L672 166 L690 172 Z" fill="#f0b84a"/>
+    <ellipse cx="716" cy="164" rx="28" ry="26"/>
+    <path d="M706 178 C720 214 770 240 836 236 C806 224 790 206 786 184 C770 172 740 160 706 178 Z"/>
+    <path d="M820 228 L880 246 L866 232 L884 226 L826 218 Z"/>
+    <path d="M730 186 C760 190 786 204 800 222 C770 220 744 208 730 186 Z" fill="#cfc7ad"/>
+  </g>
+  <circle cx="707" cy="158" r="4.5" fill="#0a1a10"/>
+  <circle cx="708.5" cy="156.5" r="1.4" fill="#fff"/>
+  <path d="M736 258 L736 244 M752 258 L752 244" stroke="#f0b84a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- text -->
+  <g font-family="DejaVu Sans, Verdana, sans-serif" fill="#f4efe0">
+    <text x="60" y="176" font-size="62" font-weight="700" letter-spacing="1">Wihanga</text>
+    <text x="60" y="244" font-size="62" font-weight="700" letter-spacing="1">Nada</text>
+    <rect x="62" y="262" width="96" height="5" rx="2.5" fill="#f0b84a"/>
+    <text x="62" y="300" font-size="22" fill="#cfe3cf">Offline bird-call identifier for Sri Lanka</text>
+    <text x="62" y="334" font-size="17" fill="#9fc3a6">Open-weight AI. No signal. Look up.</text>
+  </g>
+</svg>

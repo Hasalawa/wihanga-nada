@@ -1,0 +1,35 @@
+name: Release
+
+# Push a tag like v0.1.0 and this builds a source zip and attaches it to a
+# GitHub Release. There is no server to deploy: the app is meant to be run
+# locally, so a downloadable release is the "delivery" step.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests before releasing
+        run: |
+          python -m pip install -r requirements-dev.txt
+          python -m pytest -q
+
+      - name: Build zip
+        run: git archive --format=zip --prefix=wihanga-nada/ -o "wihanga-nada-${GITHUB_REF_NAME}.zip" HEAD
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: wihanga-nada-*.zip
+          generate_release_notes: true
