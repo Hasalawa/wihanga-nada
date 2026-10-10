@@ -1,5 +1,8 @@
 # Wihanga Nada (විහඟ නාද)
 
+<img width="2000" height="840" alt="cover" src="https://github.com/user-attachments/assets/d0da37f5-01ea-4e0d-ae9b-14216081bd0f" />
+
+
 An offline bird-call identifier for Sri Lanka. Tap **Listen**, put the phone away, look up. The app says the bird's name out loud, flags Sri Lankan endemics, and keeps a trip log. Everything runs on your own machine, with no internet and no account.
 
 Built for the Hacktoberfest Open-Source AI Challenge, week 1: *Touch Grass*.
